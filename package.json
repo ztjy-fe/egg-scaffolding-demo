@@ -1,0 +1,93 @@
+{
+  "name": "ztjy-shop",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "typescript": true,
+    "require": [
+      "egg-ts-helper/register"
+    ]
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-ztjy-shop",
+    "stop": "egg-scripts stop --title=egg-server-ztjy-shop",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test-local": "egg-bin test",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "cov": "egg-bin cov",
+    "tsc": "ets && tsc -p tsconfig.json",
+    "ci": "npm run lint && npm run cov && npm run tsc",
+    "autod": "autod",
+    "lint": "tslint --project . -c tslint.json",
+    "clean": "ets clean",
+    "script:dev": "gulp dev",
+    "script:build": "gulp"
+  },
+  "dependencies": {
+    "egg": "^2.6.1",
+    "egg-scripts": "^2.6.0",
+    "egg-view-nunjucks": "^2.2.0",
+    "request": "^2.88.0",
+    "szy-ali-topclient": "^1.0.2",
+    "zepto": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.10.2",
+    "@types/supertest": "^2.0.0",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "del": "^3.0.0",
+    "dsbridge": "^3.1.4",
+    "egg-bin": "^4.6.2",
+    "egg-ci": "^1.10.0",
+    "egg-mock": "^3.16.0",
+    "egg-ts-helper": "^1.16.1",
+    "exports-loader": "^0.7.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-css-base64": "^1.3.4",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-collector": "^1.3.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.10.0",
+    "ora": "^3.0.0",
+    "postcss-color-rgba-fallback": "^3.0.0",
+    "postcss-opacity": "^5.0.0",
+    "postcss-preset-env": "^6.4.0",
+    "postcss-pseudoelements": "^5.0.0",
+    "postcss-px2rem": "^0.3.0",
+    "precss": "^2.0.0",
+    "run-sequence": "^2.2.1",
+    "script-loader": "^0.7.2",
+    "szyutils": "^1.0.9",
+    "tslib": "^1.9.0",
+    "tslint": "^4.0.0",
+    "typescript": "^3.2.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "eslintIgnore": [
+    "coverage"
+  ],
+  "author": "ztjy",
+  "license": "MIT"
+}
